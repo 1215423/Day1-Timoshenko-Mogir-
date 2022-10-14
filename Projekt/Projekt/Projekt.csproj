@@ -67,6 +67,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Capsa.xaml.cs">
+      <DependentUpon>Capsa.xaml</DependentUpon>
+    </Compile>
     <Compile Include="category.cs">
       <DependentUpon>database.tt</DependentUpon>
     </Compile>
@@ -74,9 +77,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>database.tt</DependentUpon>
-    </Compile>
-    <Compile Include="deleted.xaml.cs">
-      <DependentUpon>deleted.xaml</DependentUpon>
     </Compile>
     <Compile Include="Instances.cs" />
     <Compile Include="listpay.xaml.cs">
@@ -100,7 +100,7 @@
     <Compile Include="user.cs">
       <DependentUpon>database.tt</DependentUpon>
     </Compile>
-    <Page Include="deleted.xaml">
+    <Page Include="Capsa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

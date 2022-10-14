@@ -14,6 +14,8 @@ namespace Projekt
     
     public partial class products_users_table
     {
+        internal long pk_user_id;
+
         public long pk_product_with_user_id { get; set; }
         public long fk_product_id { get; set; }
         public long fk_user_id { get; set; }

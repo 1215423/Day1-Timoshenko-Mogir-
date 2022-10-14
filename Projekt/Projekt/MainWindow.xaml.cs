@@ -21,28 +21,50 @@ namespace Projekt
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int g = 3;
+     
         public MainWindow()
         {
+            
             InitializeComponent();
+
+            
         }
 
         private void exet_Click(object sender, RoutedEventArgs e)
         {
+            
             using (SHA256 sha256Hash = SHA256.Create())
             {
                 string login = login_TextBox.Text;
                 string passwordFind = ConvertToHash(password_Password.Password);
+                
 
                 var user = Instances.db.users.FirstOrDefault(q => q.login.Contains(login) && q.password.Contains(passwordFind));
                 if (user != null)
                 {
                     MessageBox.Show("MOLODES");
-                    sortirovka main = new sortirovka();
+                    sortirovka bmiWindow = new sortirovka(user);
                     this.Close();
-                    main.Show();
+                    bmiWindow.Show();
                 }
                 else
-                    MessageBox.Show("NEPRAVILNYI PAROL");
+                {
+                    if (g > 0)
+                    {
+                        MessageBox.Show("Осталось: " + g + " попытки");
+                        g = g - 1;
+                    }
+                    else if (g <= 0)
+                    {
+                        Capsa capsa = new Capsa();
+                        this.Close(); 
+                        capsa.Show();
+
+                    }
+
+                }
+                    
             }
         }
 

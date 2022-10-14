@@ -22,9 +22,9 @@ C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\Projekt.ex
 C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\Projekt.pdb
 C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\Tovar.g.cs
 C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\Tovar.baml
-C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\deleted.g.cs
 C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\listpay.g.cs
 C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\sortirovka.g.cs
-C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\deleted.baml
 C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\listpay.baml
 C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\sortirovka.baml
+C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\Capsa.g.cs
+C:\UsersProfile\pr10timoshenko\source\repos\Projekt\Projekt\obj\Debug\Capsa.baml
