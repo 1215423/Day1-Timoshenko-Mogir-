@@ -1,0 +1,28 @@
+﻿<Window x:Class="Projekt.Capsa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt"
+        mc:Ignorable="d"
+        Title="Capsa" Height="200" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical">
+            <Label Content="Введите каптчу"/>
+            <TextBlock x:Name="generateCaptchaTextBox" Grid.Row="0" Margin="10,0,10,0" Height="30"/>
+        </StackPanel>
+
+        <TextBox x:Name="captchaTextBox" Grid.Row="1" Margin="10,15,10,15"/>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="120,0,0,0" Height="30" Width="180">
+            <Button x:Name="continueBtn" Width="80" Margin="0,0,20,0" Content="Продолжить" Click="continueBtn_Click"/>
+            <Button x:Name="regenerateBtn" Width="80" Content="Обновить" Click="regenerateBtn_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
